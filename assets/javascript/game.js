@@ -1,19 +1,18 @@
 
-var wordBank = ["pumpkin", "halloween", "spooky", "candy", "costume"];
-var word = wordBank[Math.floor(Math.random() * 100) % 3].split('');
+var wordBank = ["pumpkin", "halloween", "spooky", "candy", "costume", "darkness", "haunted", "hayride", "eerie", "ghost"];
+var word = wordBank[Math.floor(Math.random() * wordBank.length)].split('');
 var usersLetter;
 var guess = [];
 var guesses = 12;
 var reg = /^[a-z]+$/i;
 var blankWord = [];
 
+console.log(word);
+
 for (var i = 0; i < word.length; i ++){
   blankWord.push('-');
 }
 
-// console.log(blankWord)
-
-// console.log(word);
 
 updateBlankWord();
 
@@ -27,23 +26,17 @@ function updateGuess(){
 
 function isLetter(x){
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-  console.log(alphabet.indexOf(x));
-  if(alphabet.indexOf(x) != -1){
-    return true;
-  } else{
-    return false;
-  }
+  return alphabet.indexOf(x) !== -1;
 };
 
 function notGuessed(x){
-  console.log(guess.indexOf(x));
-  if(guess.indexOf(x) == -1){
-    return true;
-  } else{
-    return false;
-  }
+  return guess.indexOf(x) === -1;
 };
+
+function displayGuesses(){
+  document.getElementById("guesses").innerHTML = guesses;
+}
+
 
 document.onkeyup = function(event) {
   usersLetter = event.key;
@@ -64,6 +57,7 @@ document.onkeyup = function(event) {
     }
 
     guesses--;
+    displayGuesses();
     console.log(guesses);
     console.log(guess);
 
