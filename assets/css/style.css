@@ -2,3 +2,46 @@
   letter-spacing: .5em;
   font-size: 3em;
 }
+
+#guesses{
+  letter-spacing: .2em;
+  font-size: 3em;
+}
+
+#guess{
+  letter-spacing: .2em;
+  font-size: 3em;
+}
+
+.box{
+  border: 1px solid #333;
+  width: 50%;
+  margin: 0 auto;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+.guesses{
+  width: 90px;
+}
+
+h2{
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+h1{
+  margin: 0px;
+}
+
+body{
+  text-align: center;
+  color: #333;
+  background-image: url("../images/paper.jpg");
+  background-color: #fff;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+img{
+  width: 150px;
+}

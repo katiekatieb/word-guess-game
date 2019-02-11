@@ -15,6 +15,8 @@ for (var i = 0; i < word.length; i ++){
 
 
 updateBlankWord();
+displayGuesses();
+
 
 function updateBlankWord(){
   document.getElementById("word").innerHTML = blankWord.join(' ');
