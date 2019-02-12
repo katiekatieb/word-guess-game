@@ -106,6 +106,7 @@ document.onkeyup = function(event) {
       // location.reload();
     }else if (guesses <= 0){
       document.getElementById("word").innerHTML = "you lose!"
+      showButton();
       document.getElementById("wins").innerHTML = wins;
       // location.reload();
     }
