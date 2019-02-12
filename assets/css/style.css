@@ -4,8 +4,8 @@
 }
 
 #guesses{
-  letter-spacing: .2em;
-  font-size: 3em;
+  /* letter-spacing: .2em;
+  font-size: 3em; */
 }
 
 #guess{
@@ -14,8 +14,8 @@
 }
 
 .box{
-  border: 1px solid #333;
-  width: 50%;
+  /* border: 1px solid #333; */
+  /* width: 50%; */
   margin: 0 auto;
   min-height: 100px;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@ h2{
 }
 
 h1{
-  margin: 0px;
+  margin: 20px;
 }
 
 body{
@@ -44,4 +44,13 @@ body{
 
 img{
   width: 150px;
+}
+
+#play-again{
+  display: none;
+}
+
+button{
+  
+  margin: 10px auto;
 }
